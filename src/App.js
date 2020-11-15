@@ -1,26 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDom from 'react-dom';
 
-import './test'
+import { Test } from './test'
 
-import './styles.css'
+// Theme context, default to light theme
+export const ThemeContext = React.createContext();
 
 const App = () => {
-  const test2 = () => {
-    const t = document.body;
-    t.classList.contains('dark-mode')
-    if (t.classList.contains('dark-mode')) {
-      t.classList.remove('dark-mode')
-    } else {
-      t.classList.add('dark-mode')
-    }
-  }
-
+  const [theme, setTheme] = useState('light')
   return (
-    <div onClick={test2}>
-      <p>tes2t</p>
-      <corwin-test />
-    </div>
+    <ThemeContext.Provider value={theme}>
+      <div>
+        <button type="button" onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>button</button>
+        <Test />
+      </div>
+    </ThemeContext.Provider>
   )
 }
 

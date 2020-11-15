@@ -1,8 +1,18 @@
-class Test extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = '<p>Corwiwn</p>';
-    console.log('test');
-  }
-}
+import React, {useState} from 'react';
 
-customElements.define('corwin-test', Test);
+import { ThemeContext } from './app'
+
+export const Test = () => {
+  return (
+    <ThemeContext.Consumer>
+      {
+        theme => {
+          console.log(theme)
+          return (
+            <p>ello</p>
+          )
+        }
+      }
+    </ThemeContext.Consumer>
+  )
+}

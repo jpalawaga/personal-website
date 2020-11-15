@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ReactDom from 'react-dom';
 
-function App() {
+import './test'
+
+import './styles.css'
+
+const App = () => {
+  const test2 = () => {
+    const t = document.body;
+    t.classList.contains('dark-mode')
+    if (t.classList.contains('dark-mode')) {
+      t.classList.remove('dark-mode')
+    } else {
+      t.classList.add('dark-mode')
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div onClick={test2}>
+      <p>tes2t</p>
+      <corwin-test />
     </div>
-  );
+  )
 }
 
-export default App;
+ReactDom.render(<App />, document.getElementById("root"));

@@ -1,21 +1,22 @@
-import React, {useState} from 'react';
+import React from 'react';
 import ReactDom from 'react-dom';
 
-import { Test } from './test'
+// Components
+import { Header } from './modules/Header/Header'
 
-// Theme context, default to light theme
-export const ThemeContext = React.createContext();
+// Styles
+import './styles/global.css'
+
+// Utils
+import { applyThemeLocale } from './utils/theme/themeUtils'
 
 const App = () => {
-  const [theme, setTheme] = useState('light')
+  applyThemeLocale()
   return (
-    <ThemeContext.Provider value={theme}>
-      <div>
-        <button type="button" onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>button</button>
-        <Test />
-      </div>
-    </ThemeContext.Provider>
+    <div>
+      <Header />
+    </div>
   )
 }
 
-ReactDom.render(<App />, document.getElementById("root"));
+ReactDom.render(<App />, document.getElementById("app"));

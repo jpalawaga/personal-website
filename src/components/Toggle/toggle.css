@@ -1,0 +1,31 @@
+@import '../../styles/global.css';
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 23px;
+  background-color: var(--toggle-background);
+}
+
+.round {
+  border-radius: 34px;
+}
+
+.slider {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 5px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.checked {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}

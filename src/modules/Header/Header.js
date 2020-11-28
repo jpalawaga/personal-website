@@ -18,15 +18,19 @@ export const Header = () => {
   const [theme, setTheme] = useState(getThemeLocale())
 
   return (
-    <div>
-      <Toggle
-        onClick={() => {
-          setThemeLocale()
-          applyThemeLocale()
-          setTheme(getThemeLocale())
-        }}
-        theme={theme}
-      />
+    <div className='header'>
+      <div className='header-content'>
+        <p>Posts</p>
+        <p>About</p>
+        <Toggle
+          onClick={() => {
+            setThemeLocale()
+            applyThemeLocale()
+            setTheme(getThemeLocale())
+          }}
+          theme={theme}
+        />
+      </div>
     </div>
   )
 }

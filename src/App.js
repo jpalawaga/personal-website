@@ -1,5 +1,11 @@
-import React from 'react';
-import ReactDom from 'react-dom';
+// Libraries
+import React from 'react'
+import ReactDom from 'react-dom'
+import {
+  BrowserRouter,
+  Switch,
+  Route,
+} from 'react-router-dom'
 
 // Components
 import { Header } from './modules/Header/Header'
@@ -13,9 +19,21 @@ import { applyThemeLocale } from './utils/theme/themeUtils'
 const App = () => {
   applyThemeLocale()
   return (
-    <div>
-      <Header />
-    </div>
+    <BrowserRouter>
+      <div>
+        <Header />
+        <div className='padding-top-80'>
+          <Switch>
+            <Route path="/about">
+              <p>About</p>
+            </Route>
+            <Route path="/">
+              <p>Home</p>
+            </Route>
+          </Switch>
+        </div>
+      </div>
+    </BrowserRouter>
   )
 }
 

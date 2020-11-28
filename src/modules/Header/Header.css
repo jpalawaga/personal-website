@@ -1,15 +1,30 @@
+@import '../../styles/global.css';
+
 .header {
   position: fixed;
-  height: 63px;
   width: 100%;
 }
 
 .header-content {
   display: flex;
+  height: 80px;
   align-items: center;
   justify-content: flex-end;
   padding: 0 30px;
-  width: 20%;
   float: right;
-  justify-content: space-between;
+}
+
+.nav {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--a-link-hover-color);
+}
+
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-position: under;
+  color: var(--a-link-hover-color);
 }

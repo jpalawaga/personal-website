@@ -1,5 +1,8 @@
 // Libraries
 import React, { useState } from 'react'
+import {
+  NavLink
+} from 'react-router-dom'
 
 // Components
 import { Toggle } from '../../components/Toggle/Toggle'
@@ -20,8 +23,22 @@ export const Header = () => {
   return (
     <div className='header'>
       <div className='header-content'>
-        <p>Posts</p>
-        <p>About</p>
+      <NavLink
+          className="nav margin-right-30"
+          exact
+          activeClassName="active"
+          to="/"
+        >
+          Posts
+        </NavLink>
+        <NavLink
+          className="nav margin-right-30"
+          exact
+          activeClassName="active"
+          to="/about"
+        >
+          About
+        </NavLink>
         <Toggle
           onClick={() => {
             setThemeLocale()

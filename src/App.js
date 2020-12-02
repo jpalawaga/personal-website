@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom'
 
 // Components
+import { About } from './modules/About/About'
 import { Header } from './modules/Header/Header'
 
 // Styles
@@ -25,7 +26,7 @@ const App = () => {
         <div className='padding-top-80'>
           <Switch>
             <Route path="/about">
-              <p>About</p>
+              <About />
             </Route>
             <Route path="/">
               <p>Home</p>

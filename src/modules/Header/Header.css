@@ -2,6 +2,7 @@
 
 .header {
   position: fixed;
+  background: var(--bg);
   width: 100%;
 }
 

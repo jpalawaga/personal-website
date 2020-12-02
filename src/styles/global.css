@@ -12,6 +12,7 @@
   --fg: rgba(255, 255, 255, 0.88);
   --toggle-background: #6e4cb3;
   --a-link-hover-color: #9981ca;
+  --image-border: #9981ca;
 }
 
 /* Light Mode Colors */
@@ -20,6 +21,7 @@
   --fg: #222;
   --toggle-background: #ccc;
   --a-link-hover-color: #a78ddd;
+  --image-border: rgba(204,204,204,1);
 }
 
 html {

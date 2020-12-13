@@ -1,9 +1,6 @@
 // Libaries
 import React from 'react'
 
-// Components
-import { Socials } from '../../components/Socials/Socials'
-
 // Resources
 import about_image from '../../../images/about_image.jpeg'
 
@@ -18,7 +15,6 @@ export const About = () => {
         alt='Picture of Corwins mug'
         className='about-image'
       />
-      {/* <Socials /> */}
       <div className='about-info'>
         <p>Hey, im Corwin. I'm a Full Stack developer, currently on agronmomy tools with React, Node, Django, PostgreSQL, Redis, Celery. I currently lead a team working on Variable Rate technology at Farmers Edge. There will be a post coming in the future where I talk about what I work on, and will replace this sentance with that, but for now you get this hot mess.</p>
         <p>In free time looking at digital rights, humane tech, and working on personal health. I largely view the purpose of technology should be as a utility and should assist and lift people up. I have great concerns we are going to produce an AGI without humanities and diversity of culture in mind, and it will be one of the greatest travesties we could do to ourselves during this period of innovation. I hope im wrong, but there is a lot of work in tech needed to correct this path.</p>

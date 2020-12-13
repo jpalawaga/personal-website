@@ -2,8 +2,16 @@
 
 .header {
   position: fixed;
-  background: var(--bg);
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.header-socials {
+  width: 110px;
+  padding-left: 30px;
 }
 
 .header-content {
@@ -11,7 +19,7 @@
   height: 80px;
   align-items: center;
   justify-content: flex-end;
-  padding: 0 30px;
+  padding-right: 30px;
   float: right;
 }
 

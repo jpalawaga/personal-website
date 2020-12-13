@@ -1,0 +1,18 @@
+@import '../../styles/global.css';
+
+.socials-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.github_svg__icon:hover {
+  fill: var(--fg);
+}
+
+.linkedin-2166_svg__icon:hover {
+  fill: var(--fg);
+}
+
+.twitter-2170_svg__icon:hover {
+  fill: var(--fg);
+}

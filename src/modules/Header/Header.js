@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom'
 
 // Components
+import { Socials } from '../../components/Socials/Socials'
 import { Toggle } from '../../components/Toggle/Toggle'
 
 // Styles
@@ -22,6 +23,9 @@ export const Header = () => {
 
   return (
     <div className='header'>
+      <div className='header-socials'>
+        <Socials />
+      </div>
       <div className='header-content'>
       <NavLink
           className="nav margin-right-30"

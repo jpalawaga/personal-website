@@ -10,6 +10,7 @@ import {
 // Components
 import { About } from './modules/About/About'
 import { Header } from './modules/Header/Header'
+import { Posts } from './modules/Posts/Posts'
 
 // Styles
 import './styles/global.css'
@@ -29,7 +30,7 @@ const App = () => {
               <About />
             </Route>
             <Route path="/">
-              <p>Home</p>
+              <Posts />
             </Route>
           </Switch>
         </div>

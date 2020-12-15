@@ -1,0 +1,21 @@
+@import '../../styles/global.css';
+
+.posts-content {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.post-title {
+  color: var(--title-color);
+  margin: 0;
+}
+
+.post-date {
+  color: var(--date-color);
+  margin: 0;
+}
+
+.post-summary {
+  margin: 0;
+}

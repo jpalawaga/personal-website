@@ -10,6 +10,8 @@
 :root {
   --bg: #282c35;
   --fg: rgba(255, 255, 255, 0.88);
+  --title-color: #9981ca;
+  --date-color: #999;
   --toggle-background: #6e4cb3;
   --a-link-hover-color: #9981ca;
   --image-border: #9981ca;
@@ -19,6 +21,8 @@
 .light {
   --bg: #fff;
   --fg: #222;
+  --title-color:  #9981ca;
+  --date-color: #999;
   --toggle-background: #ccc;
   --a-link-hover-color: #a78ddd;
   --image-border: rgba(204,204,204,1);
